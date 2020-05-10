@@ -18,6 +18,7 @@
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../../assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
 
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="../../assets/css/theme.css">
@@ -39,38 +40,33 @@
 
                     <!-- Responsive Toggle Button -->
                     <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-            <span id="hamburgerTrigger" class="u-hamburger__box">
-              <span class="u-hamburger__inner"></span>
-            </span>
-          </button>
+                        <span id="hamburgerTrigger" class="u-hamburger__box">
+                            <span class="u-hamburger__inner"></span>
+                        </span>
+                    </button>
                     <!-- End Responsive Toggle Button -->
 
                     <!-- Navigation -->
                     <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
                         <ul class="navbar-nav u-header__navbar-nav">
-                            <!-- Home -->
+                            <!-- Mentorship -->
                             <li class="nav-item u-header__nav-item">
-                                <a class="nav-link u-header__nav-link" href="#" aria-expanded="false">Home</a>
+                                <a class="nav-link u-header__nav-link" href="#" aria-expanded="false">Mentorship</a>
                             </li>
-                            <!-- End Home -->
+                            <!-- End Mentorship -->
 
-                            <!-- Blog -->
+                            <!-- Resource Center -->
                             <li class="nav-item u-header__nav-item">
-                                <a class="nav-link u-header__nav-link" href="#" aria-expanded="false">Blog</a>
+                                <a class="nav-link u-header__nav-link" href="#" aria-haspopup="true" aria-expanded="false">Resource Center</a>
                             </li>
-                            <!-- End Blog -->
+                            <!-- End Resource Center -->
 
-                            <!-- Shop -->
-                            <li class="nav-item u-header__nav-item">
-                                <a class="nav-link u-header__nav-link" href="#" aria-haspopup="true" aria-expanded="false">Shop</a>
-                            </li>
-                            <!-- End Shop -->
+                            <!-- Login Button -->
 
-                            <!-- Docs -->
                             <li class="nav-item u-header__nav-item">
-                                <a class="nav-link u-header__nav-link" href="#" aria-haspopup="true" aria-expanded="false">Docs</a>
+                                <a class="btn btn-sm btn-primary transition-3d-hover" href="#">Login</a>
                             </li>
-                            <!-- End Docs -->
+                            <!-- End Login Button -->
                         </ul>
                     </div>
                     <!-- End Navigation -->
@@ -84,419 +80,299 @@
     <!-- ========== MAIN ========== -->
     <main id="content" role="main">
         <!-- Article Description Section -->
-        <div class="container space-2">
+        <div class="container space-1">
             <div class="w-lg-60 mx-lg-auto">
                 <div class="mb-4">
-                    <h1 class="h1 font-weight-medium">Websites to educate yourself online for free</h1>
+                    <h1 class="h1 font-weight-medium" style="text-align: center; color: #343a40;">Resource Center</h1>
                 </div>
-
-                <!-- Author -->
-                <div class="border-top border-bottom py-4 mb-5">
-                    <div class="row align-items-md-center">
-                        <div class="col-md-7 mb-5 mb-md-0">
-                            <div class="media align-items-center">
-                                <div class="u-avatar">
-                                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img11.jpg" alt="Image Description">
-                                </div>
-                                <div class="media-body font-size-1 ml-3">
-                                    <span class="h6 font-weight-medium"><a href="#">edConnect</a></span>
-                                    <span class="d-block text-muted">May 5, 2020</span>
-                                </div>
+            </div>
+        </div>
+        <!-- Portfolio Section -->
+        <!-- <div class=""> -->
+        <div class="container-fluid space-0 space-bottom-md-3 px-sm-5 u-cubeportfolio" style="padding-bottom: 0;">
+            <!-- Filter -->
+            <ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center">
+                <li class="list-inline-item cbp-filter-item cbp-filter-item-active u-cubeportfolio__item" data-filter="*">All</li>
+                <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".arts">Arts</li>
+                <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".business">Business</li>
+                <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".health">Health</li>
+                <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".personaldev">Personal Development</li>
+                <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".scienceandtech">Science and Technology</li>
+                <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".free">Free</li>
+                <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".freemium">Freemium</li>
+                <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".paid">Paid</li>
+            </ul>
+            <!-- End Filter -->
+            <div class="container space-1 space-bottom-lg-3 u-cubeportfolio" data-controls="#filterControls">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-5 arts">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="#">Udemy</a>
+                                </h2>
+                                <ul style="color: #77838f;">
+                                    <li>Courses starting as low as $9</li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="d-md-flex justify-content-md-end align-items-md-center">
-                                <h2 class="text-secondary font-size-1 font-weight-medium text-uppercase mb-0">Share:</h2>
-
-                                <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2" href="#">
-                                    <span class="fab fa-facebook-f btn-icon__inner"></span>
-                                </a>
-                                <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2" href="#">
-                                    <span class="fab fa-twitter btn-icon__inner"></span>
-                                </a>
-                                <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2" href="#">
-                                    <span class="fab fa-instagram btn-icon__inner"></span>
-                                </a>
-                                <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2" href="#">
-                                    <span class="fab fa-telegram btn-icon__inner"></span>
-                                </a>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="#">Coursera</a>
+                                </h2>
+                                <ul style="color: #77838f;">
+                                    <li>Monthly subscription starting at $39.00</li>
+                                    <li>Coursera Plus, annual subscription starting at $399.00</li>
+                                </ul>
                             </div>
-                        </div>
+                        </article>
+                        <!-- End Blog Card -->
                     </div>
-                </div>
-                <!-- End Author -->
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <p style="color:#343a40;">
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img20.jpg" alt="Image Description">
-            </div>
-            <br>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">1. Udemy</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">2. Coursera</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">3. Udacity</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">4. Alison</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <blockquote class="card bg-soft-primary border-0 text-center font-size-2 font-weight-medium text-lh-md p-5 my-5">
-                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...."
-                <span class="d-block text-muted font-size-1 mt-2">- edConnect</span>
-            </blockquote>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">5. Khan Academy</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">6. edX</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">7. Saylor</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">8. SkillFeed</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">9. SkillShare</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <blockquote class="card bg-soft-primary border-0 text-center font-size-2 font-weight-medium text-lh-md p-5 my-5">
-                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...."
-                <span class="d-block text-muted font-size-1 mt-2">- edConnect</span>
-            </blockquote>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">10. PluralSight</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">11. CodeCademy</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">12. Academic Earth</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">13. University of the People</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">14. Future Learn</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <blockquote class="card bg-soft-primary border-0 text-center font-size-2 font-weight-medium text-lh-md p-5 my-5">
-                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...."
-                <span class="d-block text-muted font-size-1 mt-2">- edConnect</span>
-            </blockquote>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">15. Tutsplus</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">16. Lynda</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">17. Kadenze</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-            <div class="w-lg-60 mx-lg-auto">
-                <div class="mb-4">
-                    <h1 class="h4 font-weight-medium">18. FreeCodeCamp</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <a href="#">cillum dolore</a>, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="my-8">
-                <img class="img-fluid rounded" src="../../assets/img/1920x800/img21.jpg" alt="Image Description">
-            </div>
-
-            <div class="w-lg-60 mx-lg-auto">
-
-                <div class="w-lg-60 mx-lg-auto">
-
-
-                    <div class="card bg-img-hero bg-primary text-white text-center p-5 my-4">
-                        <h4 class="h5 mb-3">Like what you're reading? Subscribe to our top stories.</h4>
-
-                        <!-- Form -->
-                        <form class="js-validate w-md-75 mx-md-auto">
-                            <div class="js-form-message">
-                                <div class="d-flex align-items-center">
-                                    <label class="sr-only" for="subscribeSrArticle">Subscribe</label>
-                                    <div class="input-group">
-                                        <input type="email" class="form-control" name="email" id="subscribeSrArticle" placeholder="Your email" aria-label="Your email" required data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
-                                    </div>
-                                    <button type="submit" class="btn btn-outline-white ml-3">Submit</button>
-                                </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">Udacity</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
                             </div>
-                        </form>
-                        <!-- End Form -->
+                        </article>
+                        <!-- End Blog Card -->
                     </div>
-
-                    <p>We will continue to update this <a href="#">Resource Center</a>; if you have any questions or suggestions, please <a href="#">contact us!</a> </p>
-
-                    <p class="h6 font-weight-normal">Follow us on <a class="link-muted" href="#">Medium</a>, <a class="link-muted" href="#">Twitter</a>, <a class="link-muted" href="#">Facebook</a>, <a class="link-muted" href="#">YouTube</a>, and <a class="link-muted" href="#">Instagram</a>.</p>
-
-                    <!-- Badges -->
-                    <div class="mt-5">
-                        <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Online</a></span>
-                        <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Learning</a></span>
-                        <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Free</a></span>
-                    </div>
-                    <!-- End Badges -->
-
-                    <!-- Share -->
-                    <div class="row justify-content-sm-between align-items-sm-center mt-5">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <h4 class="font-size-1 font-weight-medium text-uppercase mb-0 mr-3">Share:</h4>
-
-                                <a class="btn btn-sm btn-icon btn-soft-dark btn-bg-transparent rounded-circle mr-2" href="#">
-                                    <span class="fab fa-facebook-f btn-icon__inner"></span>
-                                </a>
-                                <a class="btn btn-sm btn-icon btn-soft-dark btn-bg-transparent rounded-circle mr-2" href="#">
-                                    <span class="fab fa-twitter btn-icon__inner"></span>
-                                </a>
-                                <a class="btn btn-sm btn-icon btn-soft-dark btn-bg-transparent rounded-circle mr-2" href="#">
-                                    <span class="fab fa-instagram btn-icon__inner"></span>
-                                </a>
-                                <a class="btn btn-sm btn-icon btn-soft-dark btn-bg-transparent rounded-circle mr-2" href="#">
-                                    <span class="fab fa-telegram btn-icon__inner"></span>
-                                </a>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">Alison</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
                             </div>
-                        </div>
+                        </article>
+                        <!-- End Blog Card -->
                     </div>
-                    <!-- End Share -->
-
-                    <!-- Author -->
-                    <div class="media align-items-center border-top border-bottom py-5 my-8">
-                        <div class="u-lg-avatar">
-                            <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img11.jpg" alt="Image Description">
-                        </div>
-                        <div class="media-body ml-3">
-                            <small class="d-block text-muted text-uppercase">Written by</small>
-                            <h3 class="h5 font-weight-medium mb-0"><a href="blog-profile.html">edConnect</a> </h3>
-                            <p class="mb-0">Lorem Ipsum.</p>
-                        </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">Khan Academy</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
                     </div>
-                    <!-- End Author -->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">edX</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">Saylor</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <!-- Blog Card -->
+                        <article class="card shadow h-100">
+                            <img class="card-img-top" src="../../assets/img/500x280/img18.jpg" alt="Image Description">
+                            <div class="card-body p-5">
+                                <a class="d-inline-block text-muted font-weight-medium text-uppercase small mb-2" href="#">Product</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a href="single-article.html">InVision design forward fund</a>
+                                </h2>
+                                <p>Clark Valberg is the founder and CEO of InVision.</p>
+                            </div>
+                        </article>
+                        <!-- End Blog Card -->
+                    </div>
                 </div>
             </div>
-            <!-- End Article Description Section -->
+        </div>
+        <!-- </div> -->
 
-            <!-- Subscribe Section -->
-            <div>
-                <div class="bg-img-hero" style="background-image: url(../../assets/img/bg-shapes/bg5.png);">
-                    <div class="container space-2">
-                        <!-- Title -->
-                        <div class="w-md-60 text-center mx-auto mb-7">
-                            <h2 class="font-weight-semi-bold">Stay in the know</h2>
-                            <p>Get special offers on the latest developments from edConnect.</p>
-                        </div>
-                        <!-- End Title -->
-
-                        <!-- Form -->
-                        <form class="js-validate w-md-75 w-lg-50 mx-md-auto">
-                            <div class="js-form-message">
-                                <div class="d-flex align-items-center">
-                                    <label class="sr-only" for="subscribeSr">Subscribe</label>
-                                    <div class="input-group">
-                                        <input type="email" class="form-control" name="email" id="subscribeSr" placeholder="Your email" aria-label="Your email" required data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-wide transition-3d-hover ml-3">Get Started</button>
-                                </div>
-                            </div>
-                        </form>
-                        <!-- End Form -->
-                    </div>
-                </div>
-            </div>
-            <!-- End Subscribe Section -->
+        <!-- End Portfolio Section -->
     </main>
     <!-- ========== END MAIN ========== -->
 
     <!-- ========== FOOTER ========== -->
     <footer>
-        <!-- Lists -->
-        <div class="border-bottom">
-            <div class="container space-2">
-                <div class="row justify-content-md-between">
-                    <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
-                        <h4 class="h6 font-weight-semi-bold">About</h4>
-
-                        <!-- List Group -->
-                        <ul class="list-group list-group-flush list-group-borderless mb-0">
-                            <li><a class="list-group-item list-group-item-action" href="#">About</a></li>
-                            <li><a class="list-group-item list-group-item-action" href="#">Services</a></li>
-                            <li><a class="list-group-item list-group-item-action" href="#">Careers</a></li>
-                        </ul>
-                        <!-- End List Group -->
-                    </div>
-
-                    <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
-                        <h4 class="h6 font-weight-semi-bold">Account</h4>
-
-                        <!-- List Group -->
-                        <ul class="list-group list-group-flush list-group-borderless mb-0">
-                            <li><a class="list-group-item list-group-item-action" href="#">Account</a></li>
-                            <li><a class="list-group-item list-group-item-action" href="#">My tasks</a></li>
-                            <li><a class="list-group-item list-group-item-action" href="#">Projects</a></li>
-                        </ul>
-                        <!-- End List Group -->
-                    </div>
-
-                    <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
-                        <h4 class="h6 font-weight-semi-bold">Resources</h4>
-
-                        <!-- List Group -->
-                        <ul class="list-group list-group-flush list-group-borderless mb-0">
-                            <li><a class="list-group-item list-group-item-action" href="#">Help</a></li>
-                            <li><a class="list-group-item list-group-item-action" href="#">Terms</a></li>
-                            <li><a class="list-group-item list-group-item-action" href="#">Privacy</a></li>
-                        </ul>
-                        <!-- End List Group -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Lists -->
-
         <!-- Copyright -->
         <div class="container text-center space-1">
             <!-- Logo -->
@@ -525,12 +401,14 @@
     <!-- JS Implementing Plugins -->
     <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 
     <!-- JS Front -->
     <script src="../../assets/js/hs.core.js"></script>
     <script src="../../assets/js/components/hs.header.js"></script>
     <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
     <script src="../../assets/js/components/hs.go-to.js"></script>
+    <script src="../../assets/js/components/hs.cubeportfolio.js"></script>
 
     <!-- JS Plugins Init. -->
     <script>
@@ -543,6 +421,10 @@
 
             // initialization of go to
             $.HSCore.components.HSGoTo.init('.js-go-to');
+
+            // initialization of cubeportfolio
+            $.HSCore.components.HSCubeportfolio.init('.cbp');
+
         });
     </script>
 </body>
