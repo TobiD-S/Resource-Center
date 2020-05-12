@@ -1,5 +1,4 @@
 // File for your custom JavaScript
-
 $(function() {
     var check = $('#filterControls .btnn');
     check.on('click', function() {
