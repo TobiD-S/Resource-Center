@@ -1081,6 +1081,7 @@
     <!-- JS Global Compulsory -->
     <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+
     <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -1117,20 +1118,6 @@
             // initialization of cubeportfolio
             $.HSCore.components.HSCubeportfolio.init('.cbp');
 
-        });
-
-        $(function() {
-            var check = $('#filterControls .btnn');
-            check.on('click', function() {
-                setTimeout(function() {
-                    $(".filters div").show();
-                    var choice = $.map(check.filter('.active'), function(el) {
-                        return "." + el.id;
-                    }).join("");
-                    if (choice)
-                        $(".filters div").not(choice).hide();
-                }, 1);
-            });
         });
     </script>
 </body>
