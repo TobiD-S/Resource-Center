@@ -95,21 +95,21 @@
             <div class="u-cubeportfolio">
                 <!-- Filter -->
                 <ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center">
-                    <li class="list-inline-item cbp-filter-item cbp-filter-item-active u-cubeportfolio__item" data-filter="*">All</li>
-                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".arts">Arts</li>
-                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".business">Business</li>
-                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".health">Health</li>
-                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".law">Law</li>
-                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".personaldev">Personal Development</li>
-                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".scienceandtech">Science and Technology</li>
-                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".free">Free</li>
-                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".freemium">Freemium</li>
-                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".paid">Paid</li>
+                    <li class="list-inline-item cbp-filter-item cbp-filter-item-active u-cubeportfolio__item btnn" data-filter="*">All</li>
+                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item btnn" data-filter=".arts">Arts</li>
+                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item btnn" data-filter=".business">Business</li>
+                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item btnn" data-filter=".health">Health</li>
+                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item btnn" data-filter=".law">Law</li>
+                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item btnn" data-filter=".personaldev">Personal Development</li>
+                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item btnn" data-filter=".scienceandtech">Science and Technology</li>
+                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item btnn" data-filter=".free">Free</li>
+                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item btnn" data-filter=".freemium">Freemium</li>
+                    <li class="list-inline-item cbp-filter-item u-cubeportfolio__item btnn" data-filter=".paid">Paid</li>
                 </ul>
                 <!-- End Filter -->
 
                 <!-- Content -->
-                <div class="cbp" data-layout="grid" data-controls="#filterControls" data-animation="quicksand" data-x-gap="32" data-y-gap="32" data-media-queries='[
+                <div class="cbp filters" data-layout="grid" data-controls="#filterControls" data-animation="quicksand" data-x-gap="32" data-y-gap="32" data-media-queries='[
                     {"width": 1500, "cols": 4},
                     {"width": 1100, "cols": 4},
                     {"width": 800, "cols": 3},
@@ -1084,6 +1084,7 @@
     <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./assets/js/theme-custom.js"></script>
 
     <!-- JS Implementing Plugins -->
     <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -1116,6 +1117,20 @@
             // initialization of cubeportfolio
             $.HSCore.components.HSCubeportfolio.init('.cbp');
 
+        });
+
+        $(function() {
+            var check = $('#filterControls .btnn');
+            check.on('click', function() {
+                setTimeout(function() {
+                    $(".filters div").show();
+                    var choice = $.map(check.filter('.active'), function(el) {
+                        return "." + el.id;
+                    }).join("");
+                    if (choice)
+                        $(".filters div").not(choice).hide();
+                }, 1);
+            });
         });
     </script>
 </body>
